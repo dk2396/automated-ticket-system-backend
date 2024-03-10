@@ -1,0 +1,18 @@
+package com.app.delivery.tracking;
+
+import com.app.delivery.tracking.config.WebConfig;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Import;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+@SpringBootApplication
+@EnableScheduling
+public class TrackingApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TrackingApplication.class, args);
+	}
+
+}
